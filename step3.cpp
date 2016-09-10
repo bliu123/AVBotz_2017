@@ -9,7 +9,6 @@ using namespace std;
 int main(int arc, char** argv)
 {
     ifstream input("in.txt");
-    
     int x, y, z, a, b = 0, c = 0;
     while (input >> x >> y >> z)
     {
@@ -26,6 +25,5 @@ int main(int arc, char** argv)
         cout << floor(a) << "\n";
         }
     }
-    freopen("out.txt","a",stdout);
-    cout << b << "\n";
+    cout << b;
 }
