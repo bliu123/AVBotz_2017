@@ -1,2 +1,7 @@
-	To solve this programmatically, I would first get the 3 time differences and points with std::cin. Next, I would find the shortest distance, then find the lengths of the other distances relative to the shortest one. Then, I would find the distance differences by multiplying each time distance by the speed of sound, 1481 
-m/s. After that, I would make two equations of the differences of the distances of two of the points, and set them equal to the actual difference in distance. Finally, I would increase two variables, x and y, by increments of .01, then plug in each increment into the equations to find the most accurate point, before outputting it with std::cout.
+	To solve this programmatically, I would first get the 3 time differences and points with std::cin. 
+Next, I would find the shortest distance, then find the lengths of the other distances relative to the 
+shortest one. Then, I would find the distance differences by multiplying each time distance by the speed of 
+sound, 1481 m/s. After that, I would make two equations of the differences of the distances of two of the 
+points, and set them equal to the actual difference in distance. Finally, I would increase two variables, 
+x and y, by increments of .01, then plug in each increment into the equations to find the most accurate point, 
+before outputting it with std::cout.
