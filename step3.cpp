@@ -25,5 +25,5 @@ int main(int arc, char** argv)
         cout << floor(a) << "\n";
         }
     }
-    cout << b;
+    cout << b << "\n";
 }
