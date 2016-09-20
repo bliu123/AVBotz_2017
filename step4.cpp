@@ -8,7 +8,7 @@ using namespace std;
 
 int main(int arc, char** argv)
 {
-    //Only works if the points are in a plane with a 1 meter grid length and if the sound originates from within the 100 by 100 meter grid.
+    //Only works if the points are in a plane with a 1 meter grid length and if the sound originates from within the 100 x 100 meter grid.
     double time1, time2, time3, x1, x2, x3, y1, y2, y3, distance1, distance2, source_x, source_y, equation1_x, equation1_y, equation2_x, equation2_y, least_x, least_y, accuracy_a, accuracy_b, accuracy_c = 1000000000, real_source_x, real_source_y;
     int close;
     cout << "Input time differences for signals recieved at A, B, and C in seconds (the input for the first station to recieve a signal should be 0, and the inputs for the other two should be relative to the first): \n";
