@@ -8,7 +8,7 @@ using namespace std;
 
 int main(int arc, char** argv)
 {
-    //Only works if the points are in a plane with a 1 meter grid length and if the sound originates from within the 100 x 100 meter grid.
+    //Only works if the points are in a plane with a 1 meter grid length and if the sound originates from within the 10 x 10 meter grid.
     double time1, time2, time3, x1, x2, x3, y1, y2, y3, distance1, distance2, source_x, source_y, equation1_x, equation1_y, equation2_x, equation2_y, least_x, least_y, accuracy_a, accuracy_b, accuracy_c = 1000000000, real_source_x, real_source_y;
     int close;
     cout << "Input time differences for signals recieved at A, B, and C in seconds (the input for the first station to recieve a signal should be 0, and the inputs for the other two should be relative to the first): \n";
@@ -102,9 +102,9 @@ int main(int arc, char** argv)
     distance1 *= 1481;
     distance2 *= 1481;
     
-    for (source_x = -100; source_x <= 100; source_x += .01)
+    for (source_x = -10; source_x <= 10; source_x += .01)
         {
-        for (source_y = -100; source_y <= 100; source_y += .01)
+        for (source_y = -10; source_y <= 10; source_y += .01)
             {
                 accuracy_a = fabs((sqrt(((source_x - equation1_x)*(source_x - equation1_x)) + ((source_y - equation1_y)*(source_y - equation1_y))) - sqrt(((source_x - least_x)*(source_x - least_x)) + ((source_y - least_y)*(source_y - least_y))) - (distance1)));
                 accuracy_b = fabs((sqrt(((source_x - equation2_x)*(source_x - equation2_x)) + ((source_y - equation2_y)*(source_y - equation2_y))) - sqrt(((source_x - least_x)*(source_x - least_x)) + ((source_y - least_y)*(source_y - least_y))) - (distance2)));
